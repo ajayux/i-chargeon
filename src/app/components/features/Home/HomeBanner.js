@@ -15,7 +15,7 @@ export default function HomeBanner() {
       />
       <div className="container">
         <div className="flex flex-col gap-[130px] lg:gap-[97px] md:gap-[97px] sm:gap-[65px]">
-          <div className="w-full max-w-[520px]">
+          <div className="w-full lg:max-w-[376px] 2xl:max-w-[468px]  3xl:max-w-[520px]">
             <Heading
               size="heading1"
               as="h1"
