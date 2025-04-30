@@ -1,5 +1,7 @@
 const sizes = {
-  text2xl: "text-[16px] font-normal lg:text-[13px]",
+  text1:
+    "3xl:text-[20px] 2xl:text-[16px] xl:text-[13px] sm:text-[12px] text-12px font-normal leading-normal",
+
   text4xl: "text-[20px] font-normal lg:text-[17px]",
 };
 
@@ -7,16 +9,13 @@ const Text = ({
   children,
   className = "",
   as,
-  size = "text4xl",
+  size = "text1",
   ...restProps
 }) => {
   const Component = as || "p";
 
   return (
-    <Component
-      className={`text-gray-900_01 font-baijamjuree ${className} ${sizes[size]} `}
-      {...restProps}
-    >
+    <Component className={`${className} ${sizes[size]} `} {...restProps}>
       {children}
     </Component>
   );

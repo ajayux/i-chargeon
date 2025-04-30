@@ -50,12 +50,12 @@
   --container-7xl: 80rem; */
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -65,7 +65,7 @@ body {
 
 @layer components {
   .container {
-    @apply mx-auto xl:px-[90px] 2xl:px-[110px] 3xl:px-[140px];
+    @apply mx-auto lg:px-[70px] xl:px-[90px] 2xl:px-[110px] 3xl:px-[140px];
   }
 
   .btn {

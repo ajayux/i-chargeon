@@ -34,7 +34,7 @@ export default function Header({ ...props }) {
   return (
     <header
       {...props}
-      className={`${props.className} w-full h-auto absolute z-10 top-0 left-0 right-0 block bg-linear-to-b from-black via-60% via-black/50 to-transparent`}
+      className={`${props.className} w-full h-auto absolute z-10 top-0 left-0 right-0 block bg-linear-to-b from-black via-70% via-black/50 to-transparent`}
     >
       <div className="container">
         <div className="w-full lg:h-[100px] 2xl:h-[120px] flex flex-wrap items-center justify-between gap-[10px] relative z-0 before:content-[''] before:block before:absolute before:z-0 before:bottom-0 before:left-0 before:right-0 before:w-full before:h-[1px] before:bg-white/20">

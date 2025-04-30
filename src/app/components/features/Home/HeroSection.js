@@ -3,9 +3,9 @@ import { Img } from "../../layout/Img";
 import { Text } from "../../layout/Text";
 import { Heading } from "../../layout/Heading";
 
-export default function HomeBanner() {
+export default function HeroSection() {
   return (
-    <section className="w-full h-dvh flex items-center lg:pt-[100px] 2xl:pt-[120px] relative z-0 before:content-[''] before:block before:absolute before:-z-1 before:bottom-0 before:left-0 before:top-0 before:w-1/2 before:h-full before:bg-linear-to-r before:from-black before:via-60% before:via-black/50 before:to-transparent">
+    <section className="w-full h-dvh flex items-center lg:pt-[100px] 2xl:pt-[120px] relative z-0 before:content-[''] before:block before:absolute before:-z-1 before:bottom-0 before:left-0 before:top-0 before:w-1/2 before:h-full before:bg-linear-to-r before:from-black before:via-80% before:via-black/50 before:to-transparent">
       <Img
         src="home-banner-1.jpg"
         alt="Image Eleven"
@@ -15,18 +15,18 @@ export default function HomeBanner() {
       />
       <div className="container">
         <div className="flex flex-col gap-[130px] lg:gap-[97px] md:gap-[97px] sm:gap-[65px]">
-          <div className="w-full lg:max-w-[376px] 2xl:max-w-[468px]  3xl:max-w-[520px]">
+          <div className="w-full lg:max-w-[540px] 2xl:max-w-[620px] 3xl:max-w-[690px]">
             <Heading
               size="heading1"
               as="h1"
-              className="mb-[15px] 2xl:mb-[20px]"
+              className="uppercase text-white mb-[15px] 2xl:mb-[20px]"
             >
-              <>
-                Rent a Power bank <br />
-                at your preferred time & location
-              </>
+              Rent a Power bank at your preferred time & location
             </Heading>
-            <Text as="p" className="mb-[15px] lg:mb-[30px] 2xl:mb-[40px]">
+            <Text
+              as="p"
+              className="text-white font-medium w-full max-w-[80%] mb-[20px] lg:mb-[40px] 2xl:mb-[60px]"
+            >
               Experience lightning-fast charging with our new fast-charging
               powerbanks, capable of charging your device decently in 30 minutes
               and fully in 1 hour.
