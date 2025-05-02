@@ -3,9 +3,23 @@ import { Img } from "../../layout/Img";
 import { Text } from "../../layout/Text";
 import { Heading } from "../../layout/Heading";
 
+function DownloadButton({ href, image }) {
+  return (
+    <Link href={href}>
+      <Img
+        src={image}
+        alt="download"
+        width={212}
+        height={72}
+        className="w-[120px] xl:w-[142px] 3xl:w-[212px] h-auto aspect-[140/48] object-contain hover:scale-105 transition-transform duration-300"
+      />
+    </Link>
+  );
+}
+
 export default function HeroSection() {
   return (
-    <section className="w-full h-dvh flex items-center lg:pt-[100px] 2xl:pt-[120px] relative z-0 before:content-[''] before:block before:absolute before:-z-1 before:bottom-0 before:left-0 before:top-0 before:w-1/2 before:h-full before:bg-linear-to-r before:from-black before:via-80% before:via-black/50 before:to-transparent">
+    <section className="w-full h-dvh min-h-[368px] xl:min-h-[440px] 3xl:min-h-[468px] flex items-center pt-[70px] lg:pt-[80px] xl:pt-[90px] 2xl:pt-[100px] 3xl:pt-[120px] relative z-0 before:content-[''] before:block before:absolute before:-z-1 before:bottom-0 before:left-0 before:top-0 before:w-1/2 before:h-full before:bg-linear-to-r before:from-black before:via-80% before:via-black/50 before:to-transparent before:pointer-events-none">
       <Img
         src="home-banner-1.jpg"
         alt="Image Eleven"
@@ -25,31 +39,15 @@ export default function HeroSection() {
             </Heading>
             <Text
               as="p"
-              className="text-white font-medium w-full max-w-[80%] mb-[20px] lg:mb-[40px] 2xl:mb-[60px]"
+              className="text-white font-medium w-full max-w-[80%] mb-[20px] xl:mb-[40px] 3xl:mb-[60px]"
             >
               Experience lightning-fast charging with our new fast-charging
               powerbanks, capable of charging your device decently in 30 minutes
               and fully in 1 hour.
             </Text>
-            <div className="flex gap-[6px]">
-              <Link href="#">
-                <Img
-                  src="img_group_1000004927.png"
-                  alt="Image Eleven"
-                  width={212}
-                  height={72}
-                  className="w-[142px] 2xl:w-[212px] h-auto aspect-[140/48] rounded-[12px] object-contain"
-                />
-              </Link>
-              <Link href="#">
-                <Img
-                  src="img_group_1000004928.png"
-                  alt="Image"
-                  width={212}
-                  height={72}
-                  className="w-[142px] 2xl:w-[212px] h-auto aspect-[140/48] rounded-[12px] object-contain"
-                />
-              </Link>
+            <div className="flex gap-[4px] 3xl:gap-[6px]">
+              <DownloadButton href="#" image="img_group_1000004927.png" />
+              <DownloadButton href="#" image="img_group_1000004928.png" />
             </div>
           </div>
         </div>

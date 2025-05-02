@@ -1,6 +1,6 @@
 const sizes = {
   text1:
-    "3xl:text-[20px] 2xl:text-[16px] xl:text-[13px] sm:text-[12px] text-12px font-normal leading-normal",
+    "3xl:text-[20px] 2xl:text-[16px] xl:text-[13px] lg:text-[12px] text-[12px] font-normal leading-normal",
 
   text4xl: "text-[20px] font-normal lg:text-[17px]",
 };

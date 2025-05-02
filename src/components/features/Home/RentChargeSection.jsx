@@ -3,20 +3,19 @@ import { Img } from "../../layout/Img";
 import { Text } from "../../layout/Text";
 import { Button } from "../../layout/Button";
 import { Heading } from "../../layout/Heading";
-// import { Heading, Img, Button, Text } from "../../layout";
 
 const chargingOptionsList = [
-  { lightningOne: "img_fi_15551000.svg", lightningTwo: "Lightning" },
-  { lightningOne: "img_fi_4106371.svg", lightningTwo: "USB-C" },
-  { lightningOne: "img_calendar.svg", lightningTwo: "Micro USB" },
+  { image: "img_fi_15551000.svg", title: "Lightning" },
+  { image: "img_fi_4106371.svg", title: "USB-C" },
+  { image: "img_calendar.svg", title: "Micro USB" },
 ];
 
 export default function RentChargeSection() {
   return (
-    <section className="w-full h-auto block 3xl:py-[140px] 2xl:py-[100px] lg:py-[80px] py-[40px]">
+    <section className="w-full h-auto block 3xl:py-[140px] 2xl:py-[100px] lg:py-[80px] py-[30px]">
       <div className="container">
-        <div className="flex flex-wrap">
-          <div className="w-full lg:w-[468px] xl:w-[576px] 2xl:w-[676px] 3xl:w-[740px] rounded-[12px] overflow-hidden relative z-0">
+        <div className="flex flex-wrap max-lg:flex-col-reverse">
+          <div className="w-full lg:w-[420px] xl:w-[494px] 2xl:w-[576px] 3xl:w-[740px] rounded-[12px] overflow-hidden relative z-0 max-lg:aspect-video">
             <Img
               src="img_image.png"
               alt="Image"
@@ -25,8 +24,8 @@ export default function RentChargeSection() {
               className="object-cover transition-transform duration-300 hover:scale-105"
             />
           </div>
-          <div className="w-full lg:w-[calc(100%-468px)] xl:w-[calc(100%-576px)] 2xl:w-[calc(100%-676px)] 3xl:w-[calc(100%-740px)] lg:pl-[20px] xl:pl-[40px] 2xl:pl-[60px] 3xl:px-[94px_40px]">
-            <div className="mb-[94px] lg:mb-[20px] xl:mb-[40px] 2xl:mb-[60px] 3xl:px-[94px">
+          <div className="w-full lg:w-[calc(100%-420px)] xl:w-[calc(100%-494px)] 2xl:w-[calc(100%-576px)] 3xl:w-[calc(100%-740px)] lg:pl-[30px] xl:pl-[60px] 2xl:pl-[60px] 3xl:px-[94px_40px] max-lg:mb-[15px] ">
+            <div className="mb-[15px] lg:mb-[20px] xl:mb-[40px] 2xl:mb-[60px] 3xl:px-[94px">
               <Heading
                 size="heading1"
                 as="h2"
@@ -37,7 +36,7 @@ export default function RentChargeSection() {
               <Text
                 as="p"
                 size="text1"
-                className="text-justify mb-[30px] 2xl:mb-[50px] [&>b]:font-medium"
+                className="text-justify mb-[15px] sm:mb-[30px] 2xl:mb-[50px] [&>b]:font-medium"
               >
                 <b>
                   Find power banks at multiple locations, available 24/7.
@@ -59,7 +58,7 @@ export default function RentChargeSection() {
                     alt="Fi 16182723"
                     width={18}
                     height={18}
-                    className="w-[10px] xl:w-[14px] 3xl:w-[18px] object-contain block"
+                    className="w-[10px] xl:w-[12px] 3xl:w-[16px] object-contain block"
                   />
                 }
                 className="max-w-[100px] sm:max-w-[120px] xl:max-w-[140px] 3xl:max-w-[204px]"
@@ -71,32 +70,32 @@ export default function RentChargeSection() {
               <Heading
                 as="h3"
                 size="heading3"
-                className="tracking-[3%] text-[#0c0c0c] mb-[10px] xl:mb-[15px] 3xl:mb-[20px]"
+                className="tracking-[3%] text-[#0c0c0c] mb-[5px] xl:mb-[10px] 3xl:mb-[15px]"
               >
                 Attached Cables
               </Heading>
               <div className="flex flex-wrap -mx-[5px] xl:-mx-[10px] 3xl:-mx-[15px]">
                 <Suspense fallback={<div>Loading feed...</div>}>
-                  {chargingOptionsList.map((d, index) => (
+                  {chargingOptionsList.map((item, index) => (
                     <div
                       key={"listlightning" + index}
-                      className="w-1/3 p-[5px] xl:p-[10px] 3xl:p-[15px]"
+                      className="w-[100px] sm:w-[120px] md:w-[140px] lg:w-1/3 p-[5px] xl:p-[10px] 3xl:p-[15px]"
                     >
-                      <div className="w-full h-auto aspect-square flex items-center justify-center rounded-[12px] bg-base2/20 px-[10px]">
+                      <div className="w-full h-auto aspect-square flex items-center justify-center rounded-[12px] bg-base2/20 px-[10px] hover:bg-base2/40 transition-background duration-300">
                         <div>
                           <Img
-                            src={d.lightningOne}
-                            alt={d.lightningTwo}
+                            src={item.image}
+                            alt={item.title}
                             width={20}
                             height={20}
-                            className="w-[20px] h-auto mb-[5px] xl:mb-[10px] 3xl:mb[15px] mx-auto"
+                            className="w-[15px] xl:w-[18px] 3xl:w-[20px] h-auto mb-[5px] xl:mb-[10px] 3xl:mb[15px] mx-auto"
                           />
                           <Heading
                             size="heading5"
                             as="h5"
                             className="text-center"
                           >
-                            {d.lightningTwo}
+                            {item.title}
                           </Heading>
                         </div>
                       </div>

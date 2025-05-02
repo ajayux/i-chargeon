@@ -31,9 +31,9 @@ const specs = [
 
 export default function WhyChooseUsSection() {
   return (
-    <section className="w-full block 3xl:py-[100px] 2xl:py-[80px] lg:py-[60px] py-[40px] bg-base1/10">
+    <section className="w-full block 3xl:py-[100px] 2xl:py-[80px] lg:py-[60px] py-[30px] bg-[#f6fbf5]">
       <div className="container">
-        <div className="mb-[20px] lg:mb-[30px] xl:mb-[40px] 2xl:mb-[60px] 3xl:mb-[80px]">
+        <div className="mb-[15px] lg:mb-[30px] xl:mb-[40px] 2xl:mb-[60px] 3xl:mb-[80px]">
           <Heading
             size="heading1"
             as="h2"
@@ -45,14 +45,14 @@ export default function WhyChooseUsSection() {
             Find power banks at multiple locations, available 24/7.
           </Text>
         </div>
-        <div className="w-full h-auto block relative z-0 py-[20px] lg:py-[30px] xl:py-[40px] 2xl:py-[60px] 3xl:py-[80px]">
-          <div className="absolute z-0 inset-0 flex items-center justify-center">
+        <div className="w-full h-auto block relative z-0 lg:py-[30px] xl:py-[40px] 2xl:py-[60px] 3xl:py-[80px]">
+          <div className="sm:absolute -z-1 inset-0 flex items-center justify-center max-sm:mb-[10px]">
             <Img
               src="img_powerbank_3.png"
               alt="Powerbankthree"
               width={260}
               height={496}
-              className="w-[260px] h-[496px] max-w-full max-h-full object-cover"
+              className="w-[100px] lg:w-[140px] xl:w-[180px] 3xl:w-[260px] aspect-[210/400] max-w-full max-h-full object-contain"
             />
           </div>
           <div className="flex flex-wrap gap-[15px] lg:gap-[20px] xl:gap-[30px] 2xl:gap-[40px] 3xl:gap-[60px] justify-between">
@@ -60,10 +60,10 @@ export default function WhyChooseUsSection() {
               {specs?.map((item, index) => (
                 <div
                   key={"specs" + index}
-                  className="lg:max-w-[420px] xl:max-w-[468px] 2xl:max-w-[500px] 3xl:max-w-[540px]"
+                  className="w-full max-w-[calc(50%-15px)] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[320px] xl:max-w-[376px] 2xl:max-w-[468px] 3xl:max-w-[540px]"
                 >
-                  <div className="w-full h-auto flex items-center self-stretch gap-[25px] bg-white shadow-[0_0_40px_0_rgba(0,0,0,0.08)] rounded-[16px] p-[15px] sm:p-[20px] xl:p-[25px] 3xl:p-[30px] transition-all duration-300 hover:bg-base2">
-                    <div className="w-[90px] h-auto aspect-square rounded-[10px] bg-base1 p-[10px] flex items-center justify-center">
+                  <div className="w-full h-auto flex flex-wrap items-center self-stretch gap-[10px] xl:gap-[15px] 3xl:gap-[20px] bg-white shadow-[0_0_40px_0_rgba(0,0,0,0.08)] rounded-[16px] p-[10px] lg:p-[15px] xl:p-[20px] 3xl:p-[30px] transition-all duration-300 hover:bg-base1/20 max-sm:flex-col">
+                    <div className="w-[40px] lg:w-[50px] xl:w-[60px] 2xl:w-[70px] 3xl:w-[90px] h-auto aspect-square rounded-[10px] bg-base1 p-[10px] flex items-center justify-center">
                       <Img
                         src={item.image}
                         alt={item.title}
@@ -72,15 +72,15 @@ export default function WhyChooseUsSection() {
                         className="aspect-square object-contain"
                       />
                     </div>
-                    <div className="flex flex-1 flex-col items-start gap-1 sm:gap-1 sm:self-stretch">
+                    <div className="flex flex-1 flex-col items-start max-sm:items-center">
                       <Heading
                         size="heading5"
                         as="h5"
-                        className="mb-[4px] 2xl:mb-[6px]"
+                        className="mb-[2px] xl:mb-[4px] 3xl:mb-[6px] max-sm:text-center"
                       >
                         {item.title}
                       </Heading>
-                      <Text as="p" className="leading-[1.2]!">
+                      <Text as="p" className="leading-[1.2]! max-sm:text-center">
                         {item.description}
                       </Text>
                     </div>
