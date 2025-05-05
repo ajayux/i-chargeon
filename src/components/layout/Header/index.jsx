@@ -92,20 +92,27 @@ export default function Header({ ...props }) {
               <HeaderNavItem title={"About"} href={"/about"} />
             </li>
             <li>
-              <HeaderNavItem title={"Contact"} href={"#"} />
+              <HeaderNavItem title={"Contact"} href={"/contact"} />
             </li>
           </ul>
           <div className="flex self-center gap-[4px] lg:gap-[6px] xl:gap-[8px] 3xl:gap-[13px] max-sm:hidden">
             {socialmedia.map((item, index) => (
-              <Link key={`socialmedia-${index}`} href={item.href} className="transition-transform duration-300 hover:scale-95">
+              <a
+                key={`socialmedia-${index}`}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="social"
+                className="transition-transform duration-300 hover:scale-95"
+              >
                 <Img
                   src={item.image}
+                  alt={item.alt}
                   width={38}
                   height={38}
-                  alt={item.alt}
                   className="w-[22px] xl:w-[26px] 3xl:w-[38px] aspect-square rounded-full transition-all duration-300 hover:[filter:brightness(0)_saturate(100%)_invert(69%)_sepia(37%)_saturate(643%)_hue-rotate(62deg)_brightness(91%)_contrast(83%)]"
                 />
-              </Link>
+              </a>
             ))}
           </div>
 

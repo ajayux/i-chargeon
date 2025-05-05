@@ -9,35 +9,29 @@ import {
 
 const faqData = [
   {
-    title: "What is the capacity of a iChargeon powerbank?",
+    title: "How can I rent a power bank?",
     description:
-      "When you rent a powerbank, the App will display the time of rental, the duration of your use and the total cost. In case you don't use the App, this information will not be given.",
+      "Download the iChargeON app (iOS or Android) to locate a nearby rental station, scan the QR code on the station to pick up a fully charged power bank. When you’re done, return it to any of our stations.",
   },
   {
-    title:
-      "How do I hand in a powerbank if the charging station is completely full?",
+    title: "Where do I pick up and return power banks?",
     description:
-      "When you rent a powerbank, the App will display the time of rental, the duration of your use and the total cost. In case you don't use the App, this information will not be given.",
+      "Our iChargeON pick-up and drop-off points are at busy areas—cafés, shopping centers, train stations, airports, and so on. The app displays all available pick-up and drop-off points in real time, allowing you to select the most convenient location.",
   },
   {
-    title: "What is the most I will be charged for using the service?",
+    title: "Do I need to sign a contract or subscription?",
     description:
-      "When you rent a powerbank, the App will display the time of rental, the duration of your use and the total cost. In case you don't use the App, this information will not be given.",
+      "No long-term commitment is needed. A small deposit will be required, and you only pay for what you use. Sign up with your email, add a payment method, and you're good to rent on the go—no subscription required.",
   },
   {
-    title: "How long until my phone is fully charged?",
+    title: "Are the power banks safe to use?",
     description:
-      "When you rent a powerbank, the App will display the time of rental, the duration of your use and the total cost. In case you don't use the App, this information will not be given.",
+      "Yes. Our power banks are internationally certified to safety standards. They have surge protection built in, temperature control, and short-circuit prevention. We also conduct regular maintenance checks on each unit.",
   },
   {
-    title: "How much does it cost to rent an iChargeon power bank?",
+    title: "What if I need assistance or feedback?",
     description:
-      "When you rent a powerbank, the App will display the time of rental, the duration of your use and the total cost. In case you don't use the App, this information will not be given.",
-  },
-  {
-    title: "What payment options do you offer?",
-    description:
-      "When you rent a powerbank, the App will display the time of rental, the duration of your use and the total cost. In case you don't use the App, this information will not be given.",
+      "Contact 'Help & Support' in the application or write to us at our email. We have a customer care team 24/7 to help you with technical, billing, or general questions.",
   },
 ];
 

@@ -4,7 +4,7 @@ import InfoSection from "@/components/features/about/InfoSection";
 export default function page() {
   return (
     <>
-      <InnerHeroSection />
+      <InnerHeroSection title="about" />
       <InfoSection />
     </>
   );

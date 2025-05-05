@@ -8,7 +8,7 @@ const specs = [
     image: "img_fi_10018202.svg",
     title: "Fast Charging",
     description:
-      "Our high-speed power banks ensure your device charges quickly.",
+      "Stay powered up with iChargeON's high-speed charging system whenever you need it.",
   },
   {
     image: "img_fi_10104619.svg",
@@ -19,13 +19,13 @@ const specs = [
   {
     image: "img_vector.svg",
     title: "Affordable Pricing",
-    description: "Pay per use or choose a flexible subscription plan.",
+    description: "Enjoy the freedom of having fully charged devices without spending a hefty amount.",
   },
   {
     image: "img_fi_15374900.svg",
     title: "Travel Light",
     description:
-      "Our high-speed power banks ensure your device charges quickly.",
+      "Travel freely knowing you can grab a fully charged power bank whenever you need it.",
   },
 ];
 
@@ -39,10 +39,10 @@ export default function WhyChooseUsSection() {
             as="h2"
             className="capitalize text-center text-black"
           >
-            Why Choose Us
+            Find us where you need us the most
           </Heading>
           <Text as="p" className="tracking-[3%] text-center">
-            Find power banks at multiple locations, available 24/7.
+            Designed for endless power and convenience.
           </Text>
         </div>
         <div className="w-full h-auto block relative z-0 lg:py-[30px] xl:py-[40px] 2xl:py-[60px] 3xl:py-[80px]">
@@ -80,7 +80,10 @@ export default function WhyChooseUsSection() {
                       >
                         {item.title}
                       </Heading>
-                      <Text as="p" className="leading-[1.2]! max-sm:text-center">
+                      <Text
+                        as="p"
+                        className="leading-[1.2]! max-sm:text-center"
+                      >
                         {item.description}
                       </Text>
                     </div>

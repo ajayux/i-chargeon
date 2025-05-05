@@ -10,7 +10,7 @@ import { useRef } from "react";
 
 function DownloadButton({ href, image }) {
   return (
-    <Link href={href}>
+    <a href={href} target="_blank" aria-label="app">
       <Img
         src={image}
         alt="download"
@@ -18,7 +18,7 @@ function DownloadButton({ href, image }) {
         height={72}
         className="w-[120px] xl:w-[142px] 3xl:w-[212px] h-auto aspect-[140/48] object-contain hover:scale-105 transition-transform duration-300"
       />
-    </Link>
+    </a>
   );
 }
 
@@ -92,8 +92,9 @@ export default function DownloadSection() {
                 size="text1"
                 className="text-justify mb-[15px] xl:mb-[20px] 3xl:mb-[40px] max-lg:text-center"
               >
-                Never run out of battery again! Get instant access to power
-                banks at your nearest location.
+                Find nearby charging hubs easily and rent a small, pocket-sized
+                power bank. Book in one click and scan a QR code to start
+                charging instantly.
               </Text>
               <div className="flex gap-[4px] 3xl:gap-[6px] max-lg:justify-center max-lg:mb-[20px]">
                 <DownloadButton
