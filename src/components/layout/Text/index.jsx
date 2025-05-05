@@ -1,3 +1,22 @@
+"use client";
+import { motion } from "motion/react";
+
+const textVariants = {
+  offscreen: {
+    y: 50,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "easeOuteaseOut",
+      bounce: 0.4,
+      duration: 0.4,
+    },
+  },
+};
+
 const sizes = {
   text1:
     "3xl:text-[20px] 2xl:text-[16px] xl:text-[13px] lg:text-[12px] text-[12px] font-normal leading-normal",
@@ -15,9 +34,16 @@ const Text = ({
   const Component = as || "p";
 
   return (
-    <Component className={`${className} ${sizes[size]} `} {...restProps}>
-      {children}
-    </Component>
+    <motion.div
+      variants={textVariants}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true }}
+    >
+      <Component className={`${className} ${sizes[size]} `} {...restProps}>
+        {children}
+      </Component>
+    </motion.div>
   );
 };
 

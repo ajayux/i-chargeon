@@ -97,7 +97,7 @@ export default function Header({ ...props }) {
           </ul>
           <div className="flex self-center gap-[4px] lg:gap-[6px] xl:gap-[8px] 3xl:gap-[13px] max-sm:hidden">
             {socialmedia.map((item, index) => (
-              <Link href={item.href} key={`socialmedia-${index}`}>
+              <Link key={`socialmedia-${index}`} href={item.href} className="transition-transform duration-300 hover:scale-95">
                 <Img
                   src={item.image}
                   width={38}
@@ -117,19 +117,20 @@ export default function Header({ ...props }) {
               <SheetContent className="bg-white backdrop-blur-[30px]">
                 <SheetHeader>
                   <SheetTitle className="sr-only">site navigation</SheetTitle>
-                  <SheetDescription className="sr-only" >chose one to navigate
+                  <SheetDescription className="sr-only">
+                    chose one to navigate
                   </SheetDescription>
-                    <ul className="flex flex-col [&>li]:max-sm:m-[15px] my-[15px]">
-                      <li>
-                        <HeaderNavItem title={"Home"} href={"/"} />
-                      </li>
-                      <li>
-                        <HeaderNavItem title={"About"} href={"#"} />
-                      </li>
-                      <li>
-                        <HeaderNavItem title={"Contact"} href={"#"} />
-                      </li>
-                    </ul>
+                  <ul className="flex flex-col [&>li]:max-sm:m-[15px] my-[15px]">
+                    <li>
+                      <HeaderNavItem title={"Home"} href={"/"} />
+                    </li>
+                    <li>
+                      <HeaderNavItem title={"About"} href={"#"} />
+                    </li>
+                    <li>
+                      <HeaderNavItem title={"Contact"} href={"#"} />
+                    </li>
+                  </ul>
                 </SheetHeader>
               </SheetContent>
             </Sheet>

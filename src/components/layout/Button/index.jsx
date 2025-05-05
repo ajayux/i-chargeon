@@ -1,5 +1,23 @@
+"use client";
 import React from "react";
 import PropTypes from "prop-types";
+import { motion } from "motion/react";
+
+const buttonVariants = {
+  offscreen: {
+    scale: 0,
+    opacity: 0,
+  },
+  onscreen: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "easeOuteaseOut",
+      bounce: 0.4,
+      duration: 0.4,
+    },
+  },
+};
 
 const variants = {
   fill: {
@@ -24,16 +42,21 @@ const Button = ({
   ...restProps
 }) => {
   return (
-    <button
+    <motion.button
       className={`${className} ${size && sizes[size]} ${
         variant && variants[variant]?.[color]
-      }`}
-      {...restProps}
+      } transition-background duration-300`}
+      {...restProps} 
+      variants={buttonVariants}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true }}
+      whileTap={{ scale: 0.9 }}
     >
       {!!leftIcon && leftIcon}
       {children}
       {!!rightIcon && rightIcon}
-    </button>
+    </motion.button>
   );
 };
 

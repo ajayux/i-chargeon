@@ -62,7 +62,7 @@ export default function WhyChooseUsSection() {
                   key={"specs" + index}
                   className="w-full max-w-[calc(50%-15px)] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[320px] xl:max-w-[376px] 2xl:max-w-[468px] 3xl:max-w-[540px]"
                 >
-                  <div className="w-full h-auto flex flex-wrap items-center self-stretch gap-[10px] xl:gap-[15px] 3xl:gap-[20px] bg-white shadow-[0_0_40px_0_rgba(0,0,0,0.08)] rounded-[16px] p-[10px] lg:p-[15px] xl:p-[20px] 3xl:p-[30px] transition-all duration-300 hover:bg-base1/20 max-sm:flex-col">
+                  <div className="w-full h-auto flex flex-wrap items-center self-stretch gap-[10px] xl:gap-[15px] 3xl:gap-[20px] bg-white shadow-[0_0_40px_0_rgba(0,0,0,0.08)] rounded-[16px] p-[10px] lg:p-[15px] xl:p-[20px] 3xl:p-[30px] transition-all duration-300 hover:bg-base1/20 hover:scale-95 max-sm:flex-col">
                     <div className="w-[40px] lg:w-[50px] xl:w-[60px] 2xl:w-[70px] 3xl:w-[90px] h-auto aspect-square rounded-[10px] bg-base1 p-[10px] flex items-center justify-center">
                       <Img
                         src={item.image}

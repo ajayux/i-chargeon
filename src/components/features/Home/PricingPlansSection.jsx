@@ -76,7 +76,7 @@ export default function PricingPlansSection() {
                           width={18}
                           height={18}
                           alt="1 Swap Included"
-                          className="w-[10px] xl:w-[14px] 3xl:w-[18px] absolute z-0 top-[3px] lg:top-[1px] left-0 filter transition duration-300 group-hover:[filter:brightness(0)_saturate(100%)_invert(96%)_sepia(0%)_saturate(0%)_hue-rotate(85deg)_brightness(104%)_contrast(104%)]"
+                          className="w-[10px] xl:w-[14px] 3xl:w-[18px] absolute z-0 top-[3px] lg:top-[1px] 2xl:top-[5px] left-0 filter transition duration-300 group-hover:[filter:brightness(0)_saturate(100%)_invert(96%)_sepia(0%)_saturate(0%)_hue-rotate(85deg)_brightness(104%)_contrast(104%)]"
                         />
                         {listingItem}
                       </li>
