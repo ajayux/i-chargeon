@@ -5,7 +5,7 @@ import { Heading } from "../../layout/Heading";
 
 function DownloadButton({ href, image }) {
   return (
-    <Link href={href}>
+    <a href={href} target="_blank" aria-label="app">
       <Img
         src={image}
         alt="download"
@@ -13,7 +13,7 @@ function DownloadButton({ href, image }) {
         height={72}
         className="w-[120px] xl:w-[142px] 3xl:w-[212px] h-auto aspect-[140/48] object-contain hover:scale-105 transition-transform duration-300"
       />
-    </Link>
+    </a>
   );
 }
 
@@ -35,15 +35,14 @@ export default function HeroSection() {
               as="h1"
               className="uppercase text-white mb-[15px] 2xl:mb-[20px]"
             >
-              Rent a Power bank at your preferred time & location
+              Pick Your Power Bank and Stay Charged, Anytime, Anywhere
             </Heading>
             <Text
               as="p"
               className="text-white font-medium w-full max-w-[80%] mb-[20px] xl:mb-[40px] 3xl:mb-[60px]"
             >
-              Experience lightning-fast charging with our new fast-charging
-              powerbanks, capable of charging your device decently in 30 minutes
-              and fully in 1 hour.
+              Experience fast-charging freedom on the move. Rent a power bank,
+              charge your device and drop it off at any iChargeON location.
             </Text>
             <div className="flex gap-[4px] 3xl:gap-[6px]">
               <DownloadButton href="#" image="img_group_1000004927.png" />

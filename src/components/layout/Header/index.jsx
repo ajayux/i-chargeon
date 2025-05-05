@@ -89,7 +89,7 @@ export default function Header({ ...props }) {
               <HeaderNavItem title={"Home"} href={"/"} />
             </li>
             <li>
-              <HeaderNavItem title={"About"} href={"#"} />
+              <HeaderNavItem title={"About"} href={"/about"} />
             </li>
             <li>
               <HeaderNavItem title={"Contact"} href={"#"} />

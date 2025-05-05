@@ -39,17 +39,16 @@ export default function RentChargeSection() {
                 className="text-justify mb-[15px] sm:mb-[30px] 2xl:mb-[50px] [&>b]:font-medium"
               >
                 <b>
-                  Find power banks at multiple locations, available 24/7.
-                  Whether you&#39;re on the move or stationary, our network of
-                  charging stations ensures that you&#39;re always powered up,
-                  regardless of your location.
+                  Never struggle with a dead device again. Rent an ultra-fast
+                  charging power bank in seconds using the iChargeON app.
+                  Download the app to locate stations, rent chargers, and manage
+                  returns.
                 </b>
                 <br />
                 <br />
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the an unknown printer took a
-                galley of type and scrambled it indus standard dummy text ever
-                since the , when to make a type specimen book.
+                Perfect for commuters, travellers, and busy professionals. Stay
+                connected effortlessly, day or night. Charge your whole day with
+                iChargeON.
               </Text>
               <Button
                 rightIcon={
