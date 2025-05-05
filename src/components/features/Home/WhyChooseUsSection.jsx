@@ -75,7 +75,7 @@ export default function WhyChooseUsSection() {
                     <div className="flex flex-1 flex-col items-start max-sm:items-center">
                       <Heading
                         size="heading5"
-                        as="h5"
+                        as="h6"
                         className="mb-[2px] xl:mb-[4px] 3xl:mb-[6px] max-sm:text-center"
                       >
                         {item.title}
