@@ -57,7 +57,7 @@ export default function InfoSection() {
             </p>
           </div>
         </div>
-        <div className="w-full h-auto aspect-[1080/320] relative z-0 overflow-hidden 3xl:p-[60px] xl:p-[40px] lg:p-[20px] p-[15px] rounded-[8px] 3xl:rounded-[12px] flex items-center my-[15px] 3xl:my-[25px]">
+        <div className="w-full h-auto lg:aspect-[1080/320] relative z-0 overflow-hidden 3xl:p-[60px] xl:p-[40px] lg:p-[20px] p-[20px] rounded-[8px] 3xl:rounded-[12px] flex items-center my-[15px] 3xl:my-[25px]">
           <Img
             src="img_image.png"
             alt="Image"

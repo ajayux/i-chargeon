@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div>
+    <div className="typography text-center py-[200px_80px] 3xl:py-[300px_100px]">
       <h1>404 - Page Not Found</h1>
-      <Link href="/">Go back home</Link>
+      <Link href="/">&laquo;&laquo; Go back Home</Link>
     </div>
   );
 }

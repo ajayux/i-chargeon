@@ -41,7 +41,7 @@ export default function OperateSection() {
                     key={"listlightning" + index}
                     className="w-1/2 2xs:w-1/3 sm:w-1/4 md:w-1/3 lg:w-1/3 p-[5px] xl:p-[8px] 3xl:p-[10px]"
                   >
-                    <div className="group w-full h-auto flex items-center justify-center rounded-[8px] border border-[rgba(106,190,85,0.5)] bg-white backdrop-blur-[9px] 3xl:p-[25px_15px] xl:p-[10px] p-[8px] cursor-pointer hover:bg-base1 transition-background duration-300">
+                    <div className="group w-full h-auto flex items-center justify-center rounded-[8px] border border-[rgba(106,190,85,0.5)] bg-white backdrop-blur-[9px] 3xl:p-[25px_15px] xl:p-[20px_15px] p-[15px_10px] cursor-pointer hover:bg-base1 transition-background duration-300">
                       <div className="flex items-center">
                         <Img
                           src="locIcon.svg"

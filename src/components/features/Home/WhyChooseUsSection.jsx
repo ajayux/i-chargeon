@@ -14,7 +14,7 @@ const specs = [
     image: "img_fi_10104619.svg",
     title: "Eco-Friendly",
     description:
-      "We promote sustainable charging solutions by reducing e-waste.",
+      "With every battery swap, iChargeON reduces the unnecessary production of disposable electronic components",
   },
   {
     image: "img_vector.svg",

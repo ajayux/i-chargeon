@@ -14,7 +14,8 @@ const baiJamjuree = Bai_Jamjuree({
 
 export const metadata = {
   title: "iChargeon",
-  description: "i charge on next website",
+  description:
+    "Experience lightning-fast charging with our new fast-charging powerbanks.",
 };
 
 export default function RootLayout({ children }) {

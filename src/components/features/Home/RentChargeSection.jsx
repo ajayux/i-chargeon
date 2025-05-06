@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import { Img } from "../../layout/Img";
 import { Text } from "../../layout/Text";
-import { Button } from "../../layout/Button";
 import { Heading } from "../../layout/Heading";
+import { LinkButton } from "@/components/layout/Button";
 
 const chargingOptionsList = [
   { image: "img_fi_15551000.svg", title: "Lightning" },
@@ -50,7 +50,8 @@ export default function RentChargeSection() {
                 connected effortlessly, day or night. Charge your whole day with
                 iChargeON.
               </Text>
-              <Button
+              <LinkButton
+                href="/about"
                 rightIcon={
                   <Img
                     src="img_fi16182723.svg"
@@ -60,10 +61,10 @@ export default function RentChargeSection() {
                     className="w-[10px] xl:w-[12px] 3xl:w-[16px] object-contain block"
                   />
                 }
-                className="max-w-[100px] sm:max-w-[120px] xl:max-w-[140px] 3xl:max-w-[204px]"
+                className="min-w-[100px] sm:min-w-[120px] xl:min-w-[140px] 3xl:min-w-[204px]"
               >
                 Know More
-              </Button>
+              </LinkButton>
             </div>
             <div>
               <Heading

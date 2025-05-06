@@ -2,6 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const buttonVariants = {
   offscreen: {
@@ -22,7 +23,8 @@ const buttonVariants = {
 const variants = {
   fill: {
     white: "text-black bg-white border-base1 hover:bg-base1 hover:text-white",
-    base1: "text-white bg-base1 border-base1 hover:bg-base1/90 hover:text-white",
+    base1:
+      "text-white bg-base1 border-base1 hover:bg-base1/90 hover:text-white",
   },
 };
 
@@ -47,7 +49,7 @@ const Button = ({
       className={`${className} ${size && sizes[size]} ${
         variant && variants[variant]?.[color]
       } transition-background duration-300`}
-      {...restProps} 
+      {...restProps}
       variants={buttonVariants}
       initial="offscreen"
       whileInView="onscreen"
@@ -61,6 +63,42 @@ const Button = ({
   );
 };
 
+const LinkButton = ({
+  children,
+  className = "",
+  leftIcon,
+  rightIcon,
+  shape,
+  variant = "fill",
+  size = "button1",
+  color = "white",
+  href = "/",
+  ...restProps
+}) => {
+  return (
+    <motion.div
+      variants={buttonVariants}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true }}
+      whileTap={{ scale: 0.9 }}
+      className="w-fit"
+    >
+      <Link
+        className={`${className} ${size && sizes[size]} ${
+          variant && variants[variant]?.[color]
+        } transition-background duration-300`}
+        {...restProps}
+        href={href}
+      >
+        {!!leftIcon && leftIcon}
+        {children}
+        {!!rightIcon && rightIcon}
+      </Link>
+    </motion.div>
+  );
+};
+
 Button.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
@@ -71,4 +109,4 @@ Button.propTypes = {
   color: PropTypes.oneOf(["white"]),
 };
 
-export { Button };
+export { Button, LinkButton };

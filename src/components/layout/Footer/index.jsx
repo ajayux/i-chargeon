@@ -53,7 +53,7 @@ function DownloadButton({ href, image }) {
 export default function Footer() {
   const pathname = usePathname();
   return (
-    <footer className="w-full h-auto block bg-black backdrop-blur-md">
+    <footer className="w-full h-auto block bg-black backdrop-blur-[10px]">
       <div className="container">
         <div className="w-full h-auto py-[30px_20px] xl:py-[40px_30px] 3xl:py-[50px_40px] flex justify-center">
           <Link href={"/"} className="w-auto mx-auto">
