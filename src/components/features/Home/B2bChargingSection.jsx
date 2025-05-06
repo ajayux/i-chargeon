@@ -52,8 +52,7 @@ export default function B2bChargingSection() {
                 alt="Splash"
                 width={445}
                 height={417}
-                style={{ width: "100%", height: "auto" }}
-                className="w-[100px] 3xs:w-[140px] sm:w-[180px] lg:w-[220px] xl:w-[280px] 3xl:w-[445px] object-contain hover:scale-105 transition-transform duration-300"
+                className="w-[100px] 3xs:w-[140px] sm:w-[180px] lg:w-[220px] xl:w-[280px] 3xl:w-[445px] aspect-square object-contain hover:scale-105 transition-transform duration-300"
               />
               <div className="flex flex-col items-start">
                 <Suspense fallback={<div>Loading feed...</div>}>

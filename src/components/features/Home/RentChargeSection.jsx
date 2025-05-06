@@ -17,8 +17,8 @@ export default function RentChargeSection() {
         <div className="flex flex-wrap max-lg:flex-col-reverse">
           <div className="w-full lg:w-[420px] xl:w-[494px] 2xl:w-[576px] 3xl:w-[740px] rounded-[12px] overflow-hidden relative z-0 max-lg:aspect-video">
             <Img
-              src="img_image.png"
-              alt="Image"
+              src="rent_img.jpg"
+              alt="rent_img"
               fill
               sizes="740px"
               className="object-cover transition-transform duration-300 hover:scale-105"

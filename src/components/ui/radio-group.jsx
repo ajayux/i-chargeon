@@ -21,7 +21,7 @@ function RadioGroupItem({ className, ...props }) {
       data-slot="radio-group-item"
       className={cn(
         "3xl:text-[20px] 2xl:text-[16px] xl:text-[13px] lg:text-[12px] text-[12px] font-normal leading-none",
-        "border-input focus-visible:border-base1/20 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square size-[15px] 3xl:size-[18px] shrink-0 rounded-[4px] border border-base1 shadow-xs transition-[color,box-shadow] outline-none disabled:cursor-not-allowed disabled:opacity-50 bg-white data-[state=checked]:bg-base1 p-[2px] 3xl:p-[4px]",
+        "border-input focus-visible:border-base1/20 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square size-[15px] 3xl:size-[18px] shrink-0 rounded-[4px] border border-base1 shadow-xs transition-[color,box-shadow] outline-none disabled:cursor-not-allowed disabled:opacity-50 bg-white data-[state=checked]:bg-base1 p-[2px] 3xl:p-[4px] lg:mr-[4px]",
         className
       )}
       {...props}

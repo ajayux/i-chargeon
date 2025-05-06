@@ -16,8 +16,7 @@ function DownloadButton({ href, image }) {
         alt="download"
         width={212}
         height={72}
-        style={{ width: '100%', height: 'auto' }}
-        className="w-[120px] xl:w-[142px] 3xl:w-[212px] h-auto object-contain hover:scale-105 transition-transform duration-300"
+        className="w-[120px] xl:w-[142px] 3xl:w-[212px] h-auto aspect-[140/48] object-contain hover:scale-105 transition-transform duration-300"
       />
     </a>
   );

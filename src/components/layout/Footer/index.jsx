@@ -1,7 +1,9 @@
+"use client";
 import Link from "next/link";
 import { Heading } from "../Heading";
 import { Img } from "../Img";
 import { Text } from "../Text";
+import { usePathname } from "next/navigation";
 
 const footerNav = [
   {
@@ -42,19 +44,16 @@ function DownloadButton({ href, image }) {
         width={170}
         height={52}
         alt="download"
-        style={{ width: "100%", height: "auto" }}
         className="w-[70px] xl:w-[115px] 3xl:w-[170px] object-contain rounded-[10px] hover:bg-white/10 transition-all duration-300"
       />
     </a>
   );
 }
 
-export default function Footer({ ...props }) {
+export default function Footer() {
+  const pathname = usePathname();
   return (
-    <footer
-      {...props}
-      className="w-full h-auto block bg-black backdrop-blur-md"
-    >
+    <footer className="w-full h-auto block bg-black backdrop-blur-md">
       <div className="container">
         <div className="w-full h-auto py-[30px_20px] xl:py-[40px_30px] 3xl:py-[50px_40px] flex justify-center">
           <Link href={"/"} className="w-auto mx-auto">
@@ -63,7 +62,6 @@ export default function Footer({ ...props }) {
               alt="Headerlogo"
               width={228}
               height={66}
-              priority
               className="w-[100px] sm:w-[140px] xl:w-[180px] 3xl:w-[228px] h-auto object-contain block"
             />
           </Link>
@@ -74,7 +72,9 @@ export default function Footer({ ...props }) {
               <li key={`footeNav-${index}`}>
                 <Heading
                   as="h6"
-                  className="3xl:text-[20px] 2xl:text-[16px] xl:text-[13px] lg:text-[12px] text-[12px] leading-none font-medium capitalize text-white hover:text-base1 transition-all duration-300"
+                  className={`3xl:text-[20px] 2xl:text-[16px] xl:text-[13px] lg:text-[12px] text-[12px] leading-none font-medium capitalize  hover:text-base1 transition-all duration-300 ${
+                    pathname === item.href ? "text-base1" : "text-white"
+                  }`}
                 >
                   <Link href={item.href}>{item.title}</Link>
                 </Heading>
@@ -122,7 +122,6 @@ export default function Footer({ ...props }) {
                 width={96}
                 height={14}
                 alt="author"
-                style={{ width: "100%", height: "auto" }}
                 className="w-[70px] xl:w-[80px] 3xl:w-[96px]  object-contain aspect-[4/1]"
               />
             </a>

@@ -19,8 +19,7 @@ const specs = [
   {
     image: "img_vector.svg",
     title: "Affordable Pricing",
-    description:
-      "Enjoy the freedom of having fully charged devices without spending a hefty amount.",
+    description: "Enjoy the freedom of having fully charged devices without spending a hefty amount.",
   },
   {
     image: "img_fi_15374900.svg",
@@ -53,8 +52,7 @@ export default function WhyChooseUsSection() {
               alt="Powerbankthree"
               width={260}
               height={496}
-              style={{ width: "100%", height: "auto" }}
-              className="w-[100px] lg:w-[140px] xl:w-[180px] 3xl:w-[260px] max-w-full max-h-full object-contain"
+              className="w-[100px] lg:w-[140px] xl:w-[180px] 3xl:w-[260px] aspect-[210/400] max-w-full max-h-full object-contain"
             />
           </div>
           <div className="flex flex-wrap gap-[15px] lg:gap-[20px] xl:gap-[30px] 2xl:gap-[40px] 3xl:gap-[60px] justify-between">

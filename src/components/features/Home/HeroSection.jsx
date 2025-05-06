@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Img } from "../../layout/Img";
 import { Text } from "../../layout/Text";
 import { Heading } from "../../layout/Heading";
@@ -19,7 +18,7 @@ function DownloadButton({ href, image }) {
 
 export default function HeroSection() {
   return (
-    <section className="w-full h-dvh min-h-[368px] xl:min-h-[440px] 3xl:min-h-[468px] flex items-center pt-[70px] lg:pt-[80px] xl:pt-[90px] 2xl:pt-[100px] 3xl:pt-[120px] relative z-0 before:content-[''] before:block before:absolute before:-z-1 before:bottom-0 before:left-0 before:top-0 before:w-1/2 before:h-full before:bg-linear-to-r before:from-black before:via-80% before:via-black/50 before:to-transparent before:pointer-events-none">
+    <section className="w-full h-dvh min-h-[368px] xl:min-h-[460px] 3xl:min-h-[768px] flex items-center pt-[70px] lg:pt-[80px] xl:pt-[90px] 2xl:pt-[100px] 3xl:pt-[120px] relative z-0 before:content-[''] before:block before:absolute before:-z-1 before:bottom-0 before:left-0 before:top-0 before:w-1/2 before:h-full before:bg-linear-to-r before:from-black before:via-80% before:via-black/50 before:to-transparent before:pointer-events-none">
       <Img
         src="home-banner-1.jpg"
         alt="Image Eleven"

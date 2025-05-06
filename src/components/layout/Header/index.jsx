@@ -13,9 +13,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation"; // ✅ Correct for app directory
-
 
 const socialmedia = [
   {
@@ -45,13 +42,10 @@ const socialmedia = [
   },
 ];
 
-function HeaderNavItem({ href, title, onClick }) {
+function HeaderNavItem({ href, title }) {
   const pathname = usePathname();
   return (
-    <div
-      onClick={() => onClick?.(href)}
-      className="group relative z-0 cursor-pointer"
-    >
+    <Link href={href} className="group relative z-0">
       <Heading
         as="h6"
         className={`3xl:text-[20px] 2xl:text-[16px] xl:text-[13px] lg:text-[12px] sm:text-[12px] text-[20px] font-semibold tracking-[2px] uppercase hover:text-base1 transition-all duration-300 ${
@@ -69,37 +63,13 @@ function HeaderNavItem({ href, title, onClick }) {
           pathname === href ? "block" : "hidden"
         }`}
       />
-    </div>
+    </Link>
   );
 }
 
-export default function Header({ ...props }) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const [isSheetOpen, setIsSheetOpen] = useState(false);
-  const [targetHref, setTargetHref] = useState(null);
-
-  const handleNavClick = (href) => {
-    if (pathname !== href) {
-      setTargetHref(href);
-      router.push(href); // Push route
-    } else {
-      setIsSheetOpen(false); // Already on page
-    }
-  };
-
-  useEffect(() => {
-    // Listen for route change and close sheet after navigating
-    if (targetHref && pathname === targetHref) {
-      setIsSheetOpen(false);
-      setTargetHref(null);
-    }
-  }, [pathname, targetHref]);
+export default function Header() {
   return (
-    <header
-      {...props}
-      className={`${props.className} w-full h-(--header-y) absolute z-10 top-0 left-0 right-0 block bg-linear-to-b from-black via-70% via-black/50 to-transparent [--header-y:70px] lg:[--header-y:80px] xl:[--header-y:90px] 2xl:[--header-y:100px] 3xl:[--header-y:120px]`}
-    >
+    <header className="w-full h-(--header-y) absolute z-10 top-0 left-0 right-0 block bg-linear-to-b from-black via-70% via-black/50 to-transparent [--header-y:70px] lg:[--header-y:80px] xl:[--header-y:90px] 2xl:[--header-y:100px] 3xl:[--header-y:120px]">
       <div className="container">
         <div className="w-full h-(--header-y) flex flex-wrap items-center justify-between gap-[10px] relative z-0 before:content-[''] before:block before:absolute before:z-0 before:bottom-0 before:left-0 before:right-0 before:w-full before:h-[1px] before:bg-white/20">
           <Link href={"/"} className="w-auto">
@@ -144,7 +114,7 @@ export default function Header({ ...props }) {
           </div>
 
           <div className="sm:hidden">
-            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+            <Sheet className="sm:hidden">
               <SheetTrigger className="flex">
                 <Menu className="size-8 text-white m-auto" />
               </SheetTrigger>
@@ -156,25 +126,13 @@ export default function Header({ ...props }) {
                   </SheetDescription>
                   <ul className="flex flex-col [&>li]:max-sm:m-[15px] my-[15px]">
                     <li>
-                      <HeaderNavItem
-                        title={"Home"}
-                        href={"/"}
-                        onClick={handleNavClick}
-                      />
+                      <HeaderNavItem title={"Home"} href={"/"} />
                     </li>
                     <li>
-                      <HeaderNavItem
-                        title={"About"}
-                        href={"/about"}
-                        onClick={handleNavClick}
-                      />
+                      <HeaderNavItem title={"About"} href={"/about"} />
                     </li>
                     <li>
-                      <HeaderNavItem
-                        title={"Contact"}
-                        href={"/contact"}
-                        onClick={handleNavClick}
-                      />
+                      <HeaderNavItem title={"Contact"} href={"/contact"} />
                     </li>
                   </ul>
                 </SheetHeader>
