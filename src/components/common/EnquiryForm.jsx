@@ -9,11 +9,12 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form"; // Adjust path based on your components.json
+} from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Img } from "../layout/Img";
+import { Button } from "../layout/Button";
 
 const formSchema = z.object({
   category: z.enum(["organization", "individual"], {
@@ -137,7 +138,7 @@ export default function EnquiryForm() {
                     type="tel"
                     placeholder="Phone Number"
                     {...field}
-                    onChange={(e) => field.onChange(e.target.value)} // Ensure string input
+                    onChange={(e) => field.onChange(e.target.value)}
                   />
                 </FormControl>
                 <FormMessage />
@@ -164,7 +165,22 @@ export default function EnquiryForm() {
           />
         </div>
         <div className="w-full p-[2px] lg:p-[4px]">
-          <Button type="submit">Submit</Button>
+          <Button
+            type="submit"
+            rightIcon={
+              <Img
+                src="icon-enquiry-btn.svg"
+                alt="Fi 16182723"
+                width={18}
+                height={18}
+                className="w-[10px] xl:w-[12px] 3xl:w-[16px] object-contain block"
+              />
+            }
+            color="base1"
+            className="max-w-[120px] sm:max-w-[140px] xl:max-w-[160px] 3xl:max-w-[204px] mx-auto lg:mr-0 mt-[15px] xl:mt-[20px] 3xl:mt-[30px]"
+          >
+            Send Message
+          </Button>
         </div>
       </form>
     </Form>

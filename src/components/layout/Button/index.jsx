@@ -22,6 +22,7 @@ const buttonVariants = {
 const variants = {
   fill: {
     white: "text-black bg-white border-base1 hover:bg-base1 hover:text-white",
+    base1: "text-white bg-base1 border-base1 hover:bg-base1/90 hover:text-white",
   },
 };
 

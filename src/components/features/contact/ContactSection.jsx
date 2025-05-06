@@ -1,5 +1,4 @@
 import EnquiryForm from "@/components/common/EnquiryForm";
-import { Button } from "@/components/layout/Button";
 import { Heading } from "@/components/layout/Heading";
 import { Img } from "@/components/layout/Img";
 import { Text } from "@/components/layout/Text";
@@ -64,8 +63,8 @@ export default function ContactSection() {
   return (
     <section className="w-full block 3xl:py-[120px] 2xl:py-[100px] lg:py-[80px] py-[30px]">
       <div className="container">
-        <div className="flex flex-wrap items-center max-lg:flex-col-reverse">
-          <div className="w-full lg:w-[calc(100%-468px)] xl:w-[calc(100%-500px)] 3xl:w-[calc(100%-768px)] lg:pr-[20px] xl:pr-[30px] 3xl:pr-[50px]">
+        <div className="flex flex-wrap items-center">
+          <div className="w-full lg:w-[calc(100%-320px)] xl:w-[calc(100%-420px)] 3xl:w-[calc(100%-768px)] lg:pr-[60px] xl:pr-[115px] 3xl:pr-[50px] max-lg:mb-[30px]">
             <Heading
               size="heading1"
               as="h2"
@@ -82,7 +81,7 @@ export default function ContactSection() {
               industry. when an unknown printer took a galley of type scrambled
               specimen book.
             </Text>
-            <div className="flex flex-wrap -mx-[4px] xl:-mx-[6px] 3xl:-mx-[10px]">
+            <div className="flex flex-wrap -mx-[4px] xl:-mx-[6px] 3xl:-mx-[10px] mb-[15px] xl:mb-[20px] 3xl:mb-[40px]">
               <div className="w-full lg:w-1/2 p-[4px] xl:p-[6px] 3xl:p-[10px]">
                 <ContactBx image="icon-phone.svg" title="contact">
                   <a
@@ -117,7 +116,14 @@ export default function ContactSection() {
               </div>
             </div>
             <div>
-              <div className="flex self-center gap-[4px] lg:gap-[6px] xl:gap-[8px] 3xl:gap-[13px] max-sm:hidden">
+              <div className="flex items-center self-center gap-[4px] lg:gap-[6px] xl:gap-[8px] 3xl:gap-[13px] max-sm:hidden">
+                <Heading
+                  size="heading5"
+                  as="h5"
+                  className="leading-none tracking-tight capitalize font-normal! text-black mr-[20px] max-lg:text-center"
+                >
+                  Social Media
+                </Heading>
                 {socialmedia.map((item, index) => (
                   <a
                     key={`socialmedia-${index}`}
@@ -139,8 +145,8 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
-          <div className="w-full lg:w-[468px] xl:w-[500px] 3xl:w-[768px] max-lg:mb-[15px]">
-            <div className="w-full h-auto block bg-base1/10 p-[20px_15px] xl:p-[35px_30px] 3xl:p-[55px_45px] rounded-[10px] 3xl:rounded-[16px]">
+          <div className="w-full lg:w-[320px] xl:w-[420px] 3xl:w-[768px]">
+            <div className="w-full h-auto block bg-base1/10 p-[20px_20px] lg:p-[20px_15px] xl:p-[35px_30px] 3xl:p-[55px_45px] rounded-[10px] 3xl:rounded-[16px]">
               <Heading
                 size="heading2"
                 as="h2"
