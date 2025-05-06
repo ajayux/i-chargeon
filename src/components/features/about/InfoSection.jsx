@@ -16,7 +16,7 @@ const visionMissionList = [
 
 export default function InfoSection() {
   return (
-    <section className="w-full h-auto block 3xl:py-[120px] 2xl:py-[100px] lg:py-[80px] py-[30px]">
+    <section className="w-full h-auto block 3xl:py-[100px] 2xl:py-[80px] lg:py-[60px] py-[30px]">
       <div className="container">
         <div className="w-full mb-[15px] lg:mb-[20px] xl:mb-[40px] 2xl:mb-[60px] 3xl:px-[94px]">
           <Heading
@@ -49,9 +49,9 @@ export default function InfoSection() {
           />
           <div>
             <Heading
-              as="h3"
+              as="h2"
               size="heading3"
-              className="tracking-[3px] capitalize text-white mb-[5px] xl:mb-[10px] 3xl:mb-[15px]"
+              className="2xl:text-[30px] md:text-[20px] text-[18px] tracking-[3px] capitalize text-white mb-[5px] xl:mb-[10px] 3xl:mb-[15px]"
             >
               Attached Cables
             </Heading>
@@ -60,7 +60,7 @@ export default function InfoSection() {
                 {chargingOptionsList.map((item, index) => (
                   <div
                     key={"listlightning" + index}
-                    className="w-1/2 3xs:w-1/4 sm:w-1/5 md:w-1/6 lg:w-1/7 p-[5px] xl:p-[10px] 3xl:p-[12px]"
+                    className="w-1/2 3xs:w-1/3 sm:w-1/5 md:w-1/6 lg:w-1/7 p-[5px] xl:p-[10px] 3xl:p-[12px]"
                   >
                     <div className="w-full h-auto aspect-square flex items-center justify-center rounded-[12px] bg-white px-[10px] hover:bg-base2/40 transition-background duration-300">
                       <div>
@@ -95,22 +95,22 @@ export default function InfoSection() {
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the an unknown printer took a galley of type and scrambled it indus standard dummy text ever since the , when  to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </Text>
         </div>
-        <div className="w-full pt-[100px]">
+        <div className="w-full 3xl:pt-[95px] 2xl:pt-[75px] xl:pt-[60px] lg:pt-[45px] pt-[25px]">
           <div className="flex flex-wrap -mx-[5px] xl:-mx-[8px] 3xl:-mx-[10px]">
             <Suspense fallback={<div>Loading feed...</div>}>
               {visionMissionList.map((item, index) => (
                 <div
                   key={"listlightning" + index}
-                  className="w-full 2xs:w-1/2 sm:w-1/2 p-[5px] xl:p-[8px] 3xl:p-[10px]"
+                  className="w-full 2xs:w-1/1 md:w-1/2 p-[5px] xl:p-[8px] 3xl:p-[10px]"
                 >
-                  <div className="w-full h-full flex items-center justify-center rounded-[16px] border-b-2 border-b-[#6ABE55] bg-[rgba(205,205,205,0.18)] backdrop-blur-[9px] 2xl:py-[50px] xl:py-[35px] py-[25px] 2xl:px-[65px] xl:px-[40px] px-[30px] transform transition duration-[600ms] hover:translate-y-[10px]">
+                  <div className="w-full h-full flex items-center rounded-[16px] border-b-2 border-b-[#6ABE55] bg-[rgba(205,205,205,0.18)] backdrop-blur-[9px] 2xl:py-[50px] xl:py-[35px] lg:py-[25px] py-[15px] 2xl:px-[65px] xl:px-[40px] lg:px-[30px] px-[20px] transform transition duration-[600ms] hover:translate-y-[10px]">
                     <div>
                       <Img
                         src={item.image}
                         alt={item.title}
                         width={20}
                         height={20}
-                        className="w-[50px] 2xl:w-[65px] 3xl:w-[75px] h-auto mb-[15px] xl:mb-[20px] 3xl:mb[25px]"
+                        className="w-[40px] md:w-[50px] 2xl:w-[65px] 3xl:w-[75px] h-auto mb-[15px] xl:mb-[20px] 3xl:mb[25px]"
                       />
                       <Heading
                         className="mb-[15px] capitalize 3xl:text-[62px] 2xl:text-[50px] xl:text-[40px] text-[30px]"
