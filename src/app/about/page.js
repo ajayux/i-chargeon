@@ -1,13 +1,13 @@
 import InnerHeroSection from "@/components/common/InnerHeroSection";
 import InfoSection from "@/components/features/about/InfoSection";
-import WhereWeOperate from "@/components/features/about/WhereWeOperate";
+import OperateSection from "@/components/features/about/OperateSection";
 
 export default function page() {
   return (
     <>
       <InnerHeroSection title="about" />
       <InfoSection />
-      <WhereWeOperate />
+      <OperateSection />
     </>
   );
 }
