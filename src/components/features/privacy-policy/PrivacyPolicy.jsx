@@ -65,7 +65,11 @@ export default function PrivacyPolicy() {
       <div className="container">
         <div className="max-w-[768px] xl:max-w-[900px] 3xl:max-w-[1360px] mx-auto">
           <div className="mb-[20px] lg:mb-[30px] xl:mb-[40px] 2xl:mb-[60px]">
-            <Heading size="heading1" as="h2" className="capitalize text-black">
+            <Heading
+              size="heading1"
+              as="h2"
+              className="capitalize text-black mb-[10px]"
+            >
               Policies
             </Heading>
             <Text as="p" className="text-[#2d2929]">
@@ -95,7 +99,7 @@ export default function PrivacyPolicy() {
                   <Heading
                     size="heading6"
                     as="h6"
-                    className="font-medium! text-black"
+                    className="xl:text-[14px] 2xl:text-[18px] 3xl:text-[22px] font-medium! text-black"
                   >
                     {item.title}
                   </Heading>

@@ -13,6 +13,9 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation"; // ✅ Correct for app directory
+
 
 const socialmedia = [
   {
@@ -42,10 +45,13 @@ const socialmedia = [
   },
 ];
 
-function HeaderNavItem({ href, title }) {
+function HeaderNavItem({ href, title, onClick }) {
   const pathname = usePathname();
   return (
-    <Link href={href} className="group relative z-0">
+    <div
+      onClick={() => onClick?.(href)}
+      className="group relative z-0 cursor-pointer"
+    >
       <Heading
         as="h6"
         className={`3xl:text-[20px] 2xl:text-[16px] xl:text-[13px] lg:text-[12px] sm:text-[12px] text-[20px] font-semibold tracking-[2px] uppercase hover:text-base1 transition-all duration-300 ${
@@ -63,11 +69,32 @@ function HeaderNavItem({ href, title }) {
           pathname === href ? "block" : "hidden"
         }`}
       />
-    </Link>
+    </div>
   );
 }
 
 export default function Header({ ...props }) {
+  const router = useRouter();
+  const pathname = usePathname();
+  const [isSheetOpen, setIsSheetOpen] = useState(false);
+  const [targetHref, setTargetHref] = useState(null);
+
+  const handleNavClick = (href) => {
+    if (pathname !== href) {
+      setTargetHref(href);
+      router.push(href); // Push route
+    } else {
+      setIsSheetOpen(false); // Already on page
+    }
+  };
+
+  useEffect(() => {
+    // Listen for route change and close sheet after navigating
+    if (targetHref && pathname === targetHref) {
+      setIsSheetOpen(false);
+      setTargetHref(null);
+    }
+  }, [pathname, targetHref]);
   return (
     <header
       {...props}
@@ -117,7 +144,7 @@ export default function Header({ ...props }) {
           </div>
 
           <div className="sm:hidden">
-            <Sheet className="sm:hidden">
+            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger className="flex">
                 <Menu className="size-8 text-white m-auto" />
               </SheetTrigger>
@@ -129,13 +156,25 @@ export default function Header({ ...props }) {
                   </SheetDescription>
                   <ul className="flex flex-col [&>li]:max-sm:m-[15px] my-[15px]">
                     <li>
-                      <HeaderNavItem title={"Home"} href={"/"} />
+                      <HeaderNavItem
+                        title={"Home"}
+                        href={"/"}
+                        onClick={handleNavClick}
+                      />
                     </li>
                     <li>
-                      <HeaderNavItem title={"About"} href={"#"} />
+                      <HeaderNavItem
+                        title={"About"}
+                        href={"/about"}
+                        onClick={handleNavClick}
+                      />
                     </li>
                     <li>
-                      <HeaderNavItem title={"Contact"} href={"#"} />
+                      <HeaderNavItem
+                        title={"Contact"}
+                        href={"/contact"}
+                        onClick={handleNavClick}
+                      />
                     </li>
                   </ul>
                 </SheetHeader>

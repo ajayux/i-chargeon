@@ -9,42 +9,43 @@ const footerNav = [
     title: "home",
   },
   {
-    href: "#",
+    href: "/about",
     title: "about",
   },
   {
-    href: "#",
+    href: "/contact",
     title: "contact",
   },
   {
-    href: "#",
+    href: "/faq",
     title: "faq",
   },
   {
-    href: "#",
+    href: "/privacy-policy",
     title: "privacy",
   },
   {
-    href: "#",
+    href: "/terms-conditions",
     title: "Terms & conditions",
   },
   {
-    href: "#",
+    href: "/contact",
     title: "help",
   },
 ];
 
 function DownloadButton({ href, image }) {
   return (
-    <Link href={href}>
+    <a href={href} target="_blank" aria-label="app">
       <Img
         src={image}
         width={170}
         height={52}
         alt="download"
+        style={{ width: "100%", height: "auto" }}
         className="w-[70px] xl:w-[115px] 3xl:w-[170px] object-contain rounded-[10px] hover:bg-white/10 transition-all duration-300"
       />
-    </Link>
+    </a>
   );
 }
 
@@ -62,6 +63,7 @@ export default function Footer({ ...props }) {
               alt="Headerlogo"
               width={228}
               height={66}
+              priority
               className="w-[100px] sm:w-[140px] xl:w-[180px] 3xl:w-[228px] h-auto object-contain block"
             />
           </Link>
@@ -110,13 +112,20 @@ export default function Footer({ ...props }) {
             >
               Designed By&nbsp;
             </Text>
-            <Img
-              src="img_mobile.svg"
-              width={96}
-              height={14}
-              alt="author"
-              className="w-[70px] xl:w-[80px] 3xl:w-[96px]  object-contain aspect-[4/1]"
-            />
+            <a
+              href={"https://www.intersmartsolution.com/"}
+              target="_blank"
+              aria-label="app"
+            >
+              <Img
+                src="img_mobile.svg"
+                width={96}
+                height={14}
+                alt="author"
+                style={{ width: "100%", height: "auto" }}
+                className="w-[70px] xl:w-[80px] 3xl:w-[96px]  object-contain aspect-[4/1]"
+              />
+            </a>
           </div>
         </div>
       </div>

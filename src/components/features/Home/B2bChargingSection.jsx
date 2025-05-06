@@ -28,7 +28,11 @@ export default function B2bChargingSection() {
             >
               Hassle-Free Charging for Your Organization
             </Heading>
-            <Text as="p" size="text1" className="text-justify max-lg:text-center">
+            <Text
+              as="p"
+              size="text1"
+              className="text-justify max-lg:text-center"
+            >
               Bring smart charging to your workplace. With our{" "}
               <b>B2B power bank rental solution</b>, companies can install
               dedicated power bank stations right within their office
@@ -48,7 +52,8 @@ export default function B2bChargingSection() {
                 alt="Splash"
                 width={445}
                 height={417}
-                className="w-[100px] 3xs:w-[140px] sm:w-[180px] lg:w-[220px] xl:w-[280px] 3xl:w-[445px] aspect-square object-contain hover:scale-105 transition-transform duration-300"
+                style={{ width: "100%", height: "auto" }}
+                className="w-[100px] 3xs:w-[140px] sm:w-[180px] lg:w-[220px] xl:w-[280px] 3xl:w-[445px] object-contain hover:scale-105 transition-transform duration-300"
               />
               <div className="flex flex-col items-start">
                 <Suspense fallback={<div>Loading feed...</div>}>

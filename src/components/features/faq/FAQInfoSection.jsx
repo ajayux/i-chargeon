@@ -108,7 +108,7 @@ export default function FAQInfoSection() {
                 className="border-b border-[#d3d3d3] py-[5px] xl:py-[10px] 3xl:py-[15px] last:border-b"
               >
                 <AccordionTrigger>
-                  <Heading size="heading6" as="h6" className="font-medium! text-black">
+                  <Heading size="heading6" as="h6" className="xl:text-[14px] 2xl:text-[18px] 3xl:text-[22px] font-medium! text-black">
                     {item.title}
                   </Heading>
                 </AccordionTrigger>
