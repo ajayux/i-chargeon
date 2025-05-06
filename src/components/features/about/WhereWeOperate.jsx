@@ -19,16 +19,16 @@ const chargingOptionsList = [
 export default function WhereWeOperate() {
     return (
         <div>
-            <section className="w-full h-auto block 3xl:py-[120px] 2xl:py-[100px] lg:py-[80px] py-[30px]">
+            <section className="w-full h-auto block 3xl:py-[100px] 2xl:py-[80px] lg:py-[50px] py-[30px] bg-[rgba(106,190,85,0.06)]">
                 <div className="container">
                     <div className="flex flex-wrap">
-                        <div className="2xl:w-[500px] w-[330px]">
+                        <div className="2xl:w-[460px] xl:w-[330px] md:w-[210px] w-full">
                             <Heading
                                 as="h2"
                                 size="heading1"
                                 className=" text-black mb-[5px] xl:mb-[10px] 3xl:mb-[15px] capitalize"
                             >
-                                Where we operate
+                                Where we <br className="hidden md:block" /> operate
                             </Heading>
                             <Text
                                 as="p"
@@ -38,17 +38,17 @@ export default function WhereWeOperate() {
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. when an unknown printer took a  publishing passages.
                             </Text>
                         </div>
-                        <div className="2xl:w-[calc(100%-500px)] w-[calc(100%-330px)]">
-                            <div className="w-full 2xl:pl-[75px] pl-[50px]">
+                        <div className="2xl:w-[calc(100%-460px)] xl:w-[calc(100%-330px)] md:w-[calc(100%-210px)] w-full md:pt-0 pt-[20px]">
+                            <div className="w-full 2xl:pl-[75px] lg:pl-[50px] md:pl-[30px]">
 
                                 <div className="flex flex-wrap -mx-[5px] xl:-mx-[8px] 3xl:-mx-[10px]">
                                     <Suspense fallback={<div>Loading feed...</div>}>
                                         {chargingOptionsList.map((item, index) => (
                                             <div
                                                 key={"listlightning" + index}
-                                                className="w-1/2 2xs:w-1/2 sm:w-1/5 md:w-1/3 lg:w-1/3 p-[5px] xl:p-[8px] 3xl:p-[10px]"
+                                                className="w-1/2 2xs:w-1/3 sm:w-1/4 md:w-1/3 lg:w-1/3 p-[5px] xl:p-[8px] 3xl:p-[10px]"
                                             >
-                                                <div className="group w-full h-auto flex items-center justify-center rounded-[8px] border border-[rgba(106,190,85,0.5)] bg-white backdrop-blur-[9px] 3xl:py-[25px] py-[10px] 3xl:px-[15px] px-[10px] hover:bg-[#6ABE55] transition-background duration-300">
+                                                <div className="group w-full h-auto flex items-center justify-center rounded-[8px] border border-[rgba(106,190,85,0.5)] bg-white backdrop-blur-[9px] 3xl:py-[25px] md:py-[10px] py-[8px] 3xl:px-[15px] md:px-[10px] px-[6px] hover:bg-[#6ABE55] transition-background duration-300">
                                                     <div className="flex items-center w-fit">
                                                         <Img
                                                             src="locIcon.svg"
@@ -56,10 +56,10 @@ export default function WhereWeOperate() {
                                                             sizes="32px"
                                                             width="100"
                                                             height="100"
-                                                            className="3xl:w-[32px] w-[21px] 3xl:h-[32px] h-[21px] object-cover group-hover:filter group-hover:invert group-hover:brightness-[0.33]"
+                                                            className="3xl:w-[32px] md:w-[21px] w-[18px] 3xl:h-[32px] md:h-[21px] h-[18px] object-cover group-hover:filter group-hover:invert group-hover:brightness-[0.33]"
                                                         />
                                                         <h5
-                                                            className="3xl:text-[22px] 2xl:text-[16px] text-[14px] 3xl:w-[calc(100%-32px)] w-[calc(100%-21px)] 2xl:pl-[12px] pl-[8px] capitalize group-hover:text-white"
+                                                            className="3xl:text-[22px] 2xl:text-[16px] text-[14px] 3xl:w-[calc(100%-32px)] md:w-[calc(100%-21px)] w-[calc(100%-18px)] 2xl:pl-[12px] pl-[8px] capitalize group-hover:text-white"
                                                         >
                                                             {item.title}
                                                         </h5>
