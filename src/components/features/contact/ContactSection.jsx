@@ -70,48 +70,49 @@ export default function ContactSection() {
               as="h2"
               className="capitalize text-black mb-[4px] xl:mb-[6px] 3xl:mb-[10px] max-lg:text-center"
             >
-              get in touch with us
+              Get in touch with us
             </Heading>
             <Text
               as="p"
               size="text1"
               className="text-justify mb-[10px] xl:mb-[15px] 3xl:mb-[20px] max-lg:text-center"
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. when an unknown printer took a galley of type scrambled
-              specimen book.
+              We’re here to help you stay connected—anytime, anywhere. Whether
+              you have a question about our service, need support with a rental,
+              or want to share your feedback, the iChargeOn team is ready to
+              assist you.
             </Text>
             <div className="flex flex-wrap -mx-[4px] xl:-mx-[6px] 3xl:-mx-[10px] mb-[15px] xl:mb-[20px] 3xl:mb-[40px]">
               <div className="w-full lg:w-1/2 p-[4px] xl:p-[6px] 3xl:p-[10px]">
                 <ContactBx image="icon-phone.svg" title="contact">
                   <a
-                    href="tel:+918776655443"
+                    href="tel:+919605903388"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="tel"
                     className="hover:text-base1"
                   >
-                    +91 8776655443
+                    +91 9605903388
                   </a>
                 </ContactBx>
               </div>
               <div className="w-full lg:w-1/2 p-[4px] xl:p-[6px] 3xl:p-[10px]">
                 <ContactBx image="icon-mail.svg" title="email">
                   <a
-                    href="mailto:support@yourapp.com"
+                    href="mailto:ichargeon@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="tel"
                     className="hover:text-base1"
                   >
-                    support@yourapp.com
+                    ichargeon@gmail.com
                   </a>
                 </ContactBx>
               </div>
               <div className="w-full p-[4px] xl:p-[6px] 3xl:p-[10px]">
                 <ContactBx image="icon-location.svg" title="address">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry
+                  Ichargeon, 30/1410, Mooleppadam Road, Vazhakkala, Kakkanad,
+                  Kochi- 682030
                 </ContactBx>
               </div>
             </div>

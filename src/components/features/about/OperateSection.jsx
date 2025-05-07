@@ -29,8 +29,10 @@ export default function OperateSection() {
               Where we operate
             </Heading>
             <Text as="p" size="text1" className="text-justify">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. when an unknown printer took a publishing passages.
+              iChargeOn stations are located at malls, cafes, transit points,
+              and other high-traffic public spaces—making mobile charging
+              available wherever you need it most. We’re rapidly expanding to
+              serve more cities across the country.
             </Text>
           </div>
           <div className="3xl:w-[calc(100%-500px)] xl:w-[calc(100%-360px)] lg:w-[calc(100%-210px)] w-full 3xl:pl-[120px] xl:pl-[80px] lg:pl-[40px]">
