@@ -42,7 +42,7 @@ const formSchema = z
         });
       }
     }
-  });
+  }); 
 
 export default function EnquiryForm() {
   const [status, setStatus] = useState(null);
