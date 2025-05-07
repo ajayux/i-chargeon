@@ -14,13 +14,13 @@ const visionMissionList = [
     image: "img_fi_3775203.svg",
     title: "Mission",
     description:
-      "To provide a seamless, affordable, and widely available mobile charging solution that keeps people connected at all times.",
+      "To provide fast, accessible, and eco-friendly mobile charging solutions that keep people powered up wherever life takes them.",
   },
   {
     image: "img_fi_978022.svg",
     title: "Vision",
     description:
-      "To build a world where no one has to worry about a dead phone battery again!",
+      "To be the most trusted and widely used power bank rental network, empowering mobile users with uninterrupted connectivity across cities and communities.",
   },
 ];
 
@@ -39,21 +39,18 @@ export default function InfoSection() {
           <div className="typography [&>p>b]:font-medium [&>ul]:mb-[15px] lg:[&>ul]:mb-[30px]">
             <p>
               <b>
-                Find power banks at multiple locations, available 24/7. Whether
-                you're on the move or stationary, our network of charging
-                stations ensures that you're always powered up, regardless of
-                your location.
+                In today's always-connected world, a dead phone battery can
+                quickly become a major inconvenience—whether you're navigating a
+                new city, attending meetings, or waiting for an important call.
               </b>
             </p>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the an unknown printer took a
-              galley of type and scrambled it indus standard dummy text ever
-              since the typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              iChargeOn is designed to eliminate that problem with an
+              easy-to-use, app-based power bank rental service that keeps you
+              powered up wherever you are. With a quick registration, a one-time
+              refundable deposit, and flexible rental packages, users can scan a
+              QR code at any iChargeOn station to instantly access a fully
+              charged power bank.
             </p>
           </div>
         </div>
@@ -106,19 +103,14 @@ export default function InfoSection() {
         </div>
         <div className="typography [&>ul]:mb-[15px] lg:[&>ul]:mb-[30px]">
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the an unknown printer took a galley
-            of type and scrambled it indus standard dummy text ever since the ,
-            when to make a type specimen book. Lorem Ipsum is simply dummy text
-            of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
-            It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem
-            Ipsum.
+            Our network of charging stations is strategically located in
+            high-traffic areas such as shopping malls, cafés, transit hubs, and
+            entertainment venues, making it easy to rent and return power banks
+            on the go. Whether you're out for a few minutes or a full day,
+            iChargeOn offers a seamless solution to keep your devices charged
+            without the need to carry extra equipment. We're here to support
+            your mobile lifestyle with convenience, reliability, and
+            uninterrupted connectivity.
           </p>
         </div>
         <div className="w-full 3xl:mt-[60px] xl:mt-[40px] mt-[20px]">

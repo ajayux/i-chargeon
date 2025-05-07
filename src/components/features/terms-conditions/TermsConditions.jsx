@@ -1,5 +1,4 @@
 import { Heading } from "@/components/layout/Heading";
-import { Text } from "@/components/layout/Text";
 
 export default function TermsConditions() {
   return (
@@ -11,98 +10,161 @@ export default function TermsConditions() {
             as="h2"
             className="capitalize text-black mb-[10px]"
           >
-            iChargeon : Terms
+            Terms & Conditions
           </Heading>
           <div className="typography [&>ul]:mb-[15px] lg:[&>ul]:mb-[30px]">
             <p>
-              Welcome to <b>iChargeon</b> These Terms and Conditions govern when
-              an unknown printer took a galley of type scrambled it to make a
-              type specimen book. It has survived of Letraset sheets containing
-              Lorem Ipsum passages, and more recently with desktop publishing
-              There are many variations of passages of Lorem Ipsum available.
-              The generated Lorem Ipsum therefore always free from repetition.
+              Welcome to <b>iChargeon</b> By registering, accessing, or using
+              our power bank rental services, you agree to the following Terms
+              and Conditions.
             </p>
-            <h6>1. Services Provided</h6>
+            <h6>1. Account Registration</h6>
             <ul>
+              <li>You must be at least 18 years old. </li>
               <li>
-                The iCharge App offers a mobile power bank rental service where
-                users can rent portable power banks to charge their mobile
-                devices. The App allows users to find nearby power bank
-                stations, rent a power bank, and return it to a compatible
-                station.
+                You agree to provide accurate, complete, and updated
+                registration information.{" "}
+              </li>
+              <li>
+                You are responsible for maintaining the confidentiality of your
+                account.
               </li>
             </ul>
-            <h6>2. Account Registration</h6>
+            <h6>2. Location Access</h6>
             <ul>
               <li>
-                To use the iCharge services, you must create an account within
-                the App. You agree to provide accurate, up-to-date information
-                and are responsible for keeping your account credentials
-                confidential. You are responsible for all activity that occurs
-                under your account.
+                Location services must be enabled to view nearby stations and
+                use our services. Disabling location access may limit
+                functionality.
               </li>
             </ul>
-            <h6>3. Eligibility</h6>
+            <h6>3. Deposits and Payments </h6>
             <ul>
               <li>
-                By using the iCharge App, you confirm that you are at least 18
-                years of age or the legal age of majority in your jurisdiction.
-                If you are under 18, you may only use the App under the
-                supervision of a parent or guardian.
+                A one-time refundable deposit is required to activate rentals.
+              </li>
+              <li>You must purchase a usage package before renting.</li>
+              <li>
+                If your usage exceeds the allowed time limit, an additional fee
+                will be charged during your next rental.
               </li>
             </ul>
-            <h6>3. Eligibility</h6>
+            <h6>4. Usage of Power Banks</h6>
             <ul>
+              <li>Scan the QR code on the device to unlock a power bank.</li>
+              <li>Return the power bank to any ICHARGEON station.</li>
               <li>
-                By using the iCharge App, you confirm that you are at least 18
-                years of age or the legal age of majority in your jurisdiction.
-                If you are under 18, you may only use the App under the
-                supervision of a parent or guardian.
+                Lost or damaged power banks may incur a penalty or replacement
+                fee.
               </li>
             </ul>
-            <h6>4. Rental Process</h6>
+            <h6>5. Restrictions</h6>
+            <p>You may not, and agree not to permit or enable others to: </p>
             <ul>
               <li>
-                Rental Period: When you rent a power bank, you agree to return
-                it within the specified rental period. The rental period is
-                outlined in the App, and charges will apply based on the
-                duration of the rental.
+                Remove or alter any copyright, trademark, or proprietary notices
+                contained in or on the ICHARGEON app, website, power banks, or
+                charging stations;
               </li>
               <li>
-                Rental Fees: You will be charged according to the pricing
-                structure displayed in the App at the time of the rental.
-                Additional charges may apply for late returns, damages, or lost
-                power banks.
+                Reproduce, distribute, modify, create derivative works from,
+                publicly display, license, sell, or otherwise exploit the
+                ICHARGEON Services, except as expressly permitted in these
+                Terms;
               </li>
               <li>
-                Deposit: A refundable deposit may be required when you rent a
-                power bank. The deposit will be refunded after the power bank is
-                returned in good condition.
+                Reverse engineer, decompile, disassemble, or otherwise attempt
+                to extract source code from the ICHARGEON application or
+                systems, except to the extent permitted by applicable law;
               </li>
               <li>
-                Return and Availability: You are responsible for ensuring the
-                power bank is returned to an authorized power bank station.
-                Failure to return the power bank may result in additional
-                charges or suspension of your account.
+                Link to, mirror, or frame any part of the Services, including
+                charging station maps, without our express written consent;
+              </li>
+              <li>
+                Use automated scripts, bots, crawlers, or other means to scrape,
+                index, or extract data from the ICHARGEON app or website, or to
+                overload or interfere with the performance or functionality of
+                the Services;
+              </li>
+              <li>
+                Access or attempt to access the Services or related systems or
+                networks without authorization, or attempt to bypass any
+                security or authentication measures;
+              </li>
+              <li>
+                Use the Services for any unlawful, harmful, abusive, or
+                disruptive purpose, including damaging ICHARGEON equipment,
+                interfering with other users, or violating applicable laws and
+                regulations.
               </li>
             </ul>
-            <h6>5. Privacy and Data Collection</h6>
+            <h6>6. Refund Policy</h6>
             <ul>
               <li>
-                By using the App, you consent to the collection and processing
-                of your personal information as described in our [Privacy
-                Policy]. We may collect data such as location information, usage
-                data, and payment details to provide the services effectively
-                and improve user experience.
+                Deposits are refundable upon account closure, subject to return
+                of all power banks and no outstanding dues.
               </li>
+              <li>Usage packages are non-refundable after activation.</li>
             </ul>
-            <h6>6. Intellectual Property</h6>
+            <h6>7. User Conduct</h6>
+            <p>You agree not to: </p>
+            <ul>
+              <li>Use the services for unlawful purposes.</li>
+              <li>Damage or tamper with the stations or power banks.</li>
+              <li>Share your account with others.</li>
+            </ul>
+            <h6>8. Damage or Loss Fees</h6>
+            <p>
+              You are responsible for the cost of repair or replacement of any
+              ICHARGEON power bank or charging station if it is damaged or lost
+              during your use under your account. This includes, but is not
+              limited to, physical damage such as a cracked casing, water
+              damage, broken ports, intentional tampering, or failure to return
+              the power bank. If such damage or loss is reported and verified by
+              ICHARGEON at its reasonable discretion, we reserve the right to
+              charge your registered payment method for the applicable repair or
+              replacement fee. These charges are non-refundable and cover the
+              actual cost of restoring or replacing the affected equipment.{" "}
+            </p>
+            <h6>9. Liability and Disclaimer</h6>
+            <p>ICHARGEON is not responsible for: </p>
             <ul>
               <li>
-                All content, features, and functionality of the iCharge App,
-                including but not limited to trademarks, logos, text, graphics,
-                and software, are the property of iCharge or its licensors and
-                are protected by intellectual property laws.
+                Loss of data or device issues caused by third-party accessories.
+              </li>
+              <li>User negligence leading to device damage or theft.</li>
+            </ul>
+            <h6>10. Data Retention</h6>
+            <p>
+              ICHARGEON retains your personal information for as long as it is
+              necessary to operate our services effectively, manage your account
+              activity, and fulfill rental transactions. We keep data for as
+              long as we need it to provide our power bank rental services,
+              comply with legal and regulatory obligations, resolve disputes,
+              prevent fraud, and protect the rights and interests of ICHARGEON
+              and its users. Once your account is closed and any outstanding
+              obligations are settled, we may retain limited information where
+              required by law or for legitimate business purposes.{" "}
+            </p>
+            <h6>11. Termination</h6>
+            <p>
+              We reserve the right to suspend or terminate your account for
+              violation of these terms or misuse of services
+            </p>
+            <h6>12. Changes to Terms</h6>
+            <p>
+              We may modify these terms at any time. Continued use of the
+              service implies acceptance of the updated terms.
+            </p>
+            <h6>13. Contact Us </h6>
+            <p>For any queries or support, contact us at: </p>
+            <ul>
+              <li>
+                <b>Email:</b> ichargeon@gmail.com
+              </li>
+              <li>
+                <b>Phone:</b> 9605903388
               </li>
             </ul>
           </div>

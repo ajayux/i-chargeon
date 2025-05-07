@@ -9,53 +9,69 @@ import {
 
 const faqData = [
   {
-    title: "Where do I pick up and return power banks?",
-    description:
-      "Our iChargeON pick-up and drop-off points are at busy areas—cafés, shopping centers, train stations, airports, and so on. The app displays all available pick-up and drop-off points in real time, allowing you to select the most convenient location.",
-  },
-  {
-    title: "How do we use your information?",
+    title: "Information We Collect",
     description: `
-      <p>Follow these steps to rent a power bank:</p>
       <ul>
-        <li>Download our mobile app or visit a participating rental station.</li>
-        <li>Register an account and provide payment details.</li>
-        <li>Scan the QR code on the power bank or select one via the app.</li>
-        <li>Confirm the rental agreement and unlock the power bank.</li>
-        <li>Use the power bank and return it to any designated station when done.</li>
-        <li>Ensure the power bank is properly inserted to end the rental session.</li>
+        <li><b>Personal Information:</b> Name, email address, phone number, and payment details when you register and use our services.</li>
+        <li><b>Location Data:</b> We collect real-time location information to help you find nearby charging stations.</li>
+        <li><b>Device Information:</b> Device type, operating system, and other technical data.</li>
+        <li><b>Usage Data:</b> Information about your interactions with our app, such as rental history and station usage.</li>
       </ul>
     `,
   },
   {
-    title: "Do I need to sign a contract or subscription?",
-    description:
-      "No long-term commitment is needed. A small deposit will be required, and you only pay for what you use. Sign up with your email, add a payment method, and you're good to rent on the go—no subscription required.",
+    title: "How We Use Your Information",
+    description: `
+       <ul>
+        <li>To provide and manage our services.</li>
+        <li>To process payments, including deposit and rental fees.</li>
+        <li>To send you important updates, such as rental reminders and promotions.</li>
+        <li>To improve our app functionality and customer support.</li>
+        <li>To comply with legal obligations.</li>
+      </ul>
+    `,
   },
   {
-    title: "Are the power banks safe to use?",
-    description:
-      "Yes. Our power banks are internationally certified to safety standards. They have surge protection built in, temperature control, and short-circuit prevention. We also conduct regular maintenance checks on each unit.",
+    title: "Sharing Your Information",
+    description: `
+    <p>We do not sell your personal data. However, we may share your information with:</p>
+       <ul>
+        <li>Payment gateways and financial partners to process transactions.</li>
+        <li>Service providers assisting with app functionality and analytics.</li>
+        <li>Law enforcement or regulatory authorities when legally required.</li>
+      </ul>
+    `,
   },
   {
-    title: "What if I need assistance or feedback?",
+    title: "Data Security",
     description:
-      "Contact 'Help & Support' in the application or write to us at our email. We have a customer care team 24/7 to help you with technical, billing, or general questions.",
+      "We take the security of your personal data very seriously. To protect your information, we implement a variety of security measures, including encryption technologies and secure servers. While we strive to adhere to industry-standard security practices to safeguard your data, no method of data transmission over the Internet is completely without risk. As such, we cannot guarantee absolute security. We encourage users to take steps to protect their personal information while online, including using secure networks and updating account credentials regularly.",
   },
   {
-    title: "How can I rent a power bank?",
-    description:
-      "Download the iChargeON app (iOS or Android) to locate a nearby rental station, scan the QR code on the station to pick up a fully charged power bank. When you’re done, return it to any of our stations.",
+    title: "Your Rights",
+    description: `
+      <p>You may:</p>
+      <ul>
+        <li>Access or update your personal information through your profile settings.</li>
+        <li>Request deletion of your data (subject to legal obligations).</li>
+        <li>Withdraw consent to data collection by deactivating your account.</li>
+      </ul>
+    `,
   },
   {
-    title: "Where do I pick up and return power banks?",
+    title: "Changes to This Policy",
     description:
-      "Our iChargeON pick-up and drop-off points are at busy areas—cafés, shopping centers, train stations, airports, and so on. The app displays all available pick-up and drop-off points in real time, allowing you to select the most convenient location.",
+      "We may update this Privacy Policy occasionally. Continued use of the app after changes constitutes acceptance of the new terms.",
   },
   {
-    title: "Do I need to sign a contract or subscription?",
-    description:
-      "No long-term commitment is needed. A small deposit will be required, and you only pay for what you use. Sign up with your email, add a payment method, and you're good to rent on the go—no subscription required.",
+    title: "Contact Us",
+    description: `
+      <p>For questions about this Privacy Policy, please contact us at:</p>
+      <ul>
+        <li><b>Email:</b> ichargeon@gmail.com</li>
+        <li><b>Phone:</b> 9605903388</li>
+      </ul>
+    `,
   },
 ];
 
@@ -73,14 +89,16 @@ export default function PrivacyPolicy() {
               Policies
             </Heading>
             <Text as="p" className="text-[#2d2929]">
-              We want you to know exactly how ichargeon services work and why we
-              need your details. iChargeon our policy will help you continue
-              using the app with peace of mind. It is a long established fact
-              that a reader will be distracted by the readable content of a page
-              when looking at its layout. The point of using Lorem Ipsum is that
-              it has a more-or-less normal distribution of letters, as opposed
-              to using 'Content here, content here', making it look like
-              readable English.
+              ICHARGEON ("we", "our", or "us") is committed to protecting your
+              privacy. This Privacy Policy explains how we collect, use,
+              disclose, and safeguard your information when you use our services
+              through the ICHARGEON app or website.
+              <br />
+              <br />
+              The Services constitute a technology platform that enables users
+              of ICHARGEON’s mobile application to locate, rent, and return
+              portable power banks from ICHARGEON charging stations conveniently
+              and securely.
             </Text>
           </div>
           <Accordion
